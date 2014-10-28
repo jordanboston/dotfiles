@@ -20,7 +20,6 @@ ok github tpope/vim-pathogen
 
 destination $HOME/dotfiles/.vim/bundle
 ok github tpope/vim-bundler
-ok github tpope/vim-fugitive
 ok github tpope/vim-surround
 ok github tpope/vim-rails
 ok github tpope/vim-bundler
