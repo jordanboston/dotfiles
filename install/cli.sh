@@ -18,7 +18,6 @@ destination $HOME/dotfiles/.vim/autoload
 ok github tpope/vim-pathogen
 
 destination $HOME/dotfiles/.vim/bundle
-ok github tpope/vim-bundler
 ok github tpope/vim-surround
 ok github tpope/vim-rails
 ok github tpope/vim-bundler
@@ -27,6 +26,7 @@ ok github kien/ctrlp.vim
 ok github scrooloose/syntastic
 ok github skammer/vim-css-color
 ok github mattn/webapi-vim
+ok github mattn/emmet-vim
 ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
 
