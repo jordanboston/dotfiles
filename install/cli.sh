@@ -10,7 +10,6 @@ ok cask heroku-toolbelt
 
 ok directory $HOME/
 ok directory $HOME/dotfiles
-ok directory $HOME/dotfiles
 ok directory $HOME/dotfiles/.vim
 ok directory $HOME/dotfiles/.vim/bundle
 ok directory $HOME/dotfiles/.vim/autoload
