@@ -23,6 +23,7 @@ ok github tpope/vim-rails
 ok github tpope/vim-bundler
 ok github mattn/gist-vim
 ok github kien/ctrlp.vim
+ok github reedes/vim-pencil
 ok github scrooloose/syntastic
 ok github skammer/vim-css-color
 ok github mattn/webapi-vim

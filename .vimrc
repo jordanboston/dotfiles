@@ -166,4 +166,6 @@ nnoremap <leader>t :TagbarToggle<CR>
 
 "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 "Extras, for testing out possible canidates
+" Show hidden files in NERDTree
+let NERDTreeShowHidden=1
 "=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-=-=-
