@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,7 +54,9 @@ plugins=(git git-extras ruby brew bundler osx rails web-search)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=~/.bin:/~/.bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/code/bork/bin:$PATH
+export PATH=/usr/local/sbin:$HOME/code/bork/bin:$PATH
+
+# export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/code/bork/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -83,6 +86,11 @@ eval "$(rbenv init -)"
 
 # For Brew and what not with git
 export PATH="/usr/local/bin:$PATH"
+
+#  Use the correct load path in a TMUX session
+if [ -n "$TMUX" ]; then
+    eval "$(rbenv init -)"
+fi
 
 # tmuxinator
 # source ~/.bin/tmuxinator.zsh
