@@ -54,7 +54,8 @@ plugins=(git git-extras ruby brew bundler osx rails web-search)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=/usr/local/sbin:$HOME/code/bork/bin:$PATH
+export PATH=/usr/local/sbin:$HOME/code/bork/bin:/Applications/Postgres.app:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/code/bork/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -73,8 +74,6 @@ export EDITOR=vim
 # aliases
 alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-alias psqlstart="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias psqlstop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 
 # Stop annoying AUTO-CORRECTION (like with rspec command)
 unsetopt correct_all
@@ -92,5 +91,3 @@ if [ -n "$TMUX" ]; then
     eval "$(rbenv init -)"
 fi
 
-# tmuxinator
-# source ~/.bin/tmuxinator.zsh
