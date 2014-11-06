@@ -27,7 +27,6 @@ ok github reedes/vim-pencil
 ok github scrooloose/syntastic
 ok github skammer/vim-css-color
 ok github mattn/webapi-vim
-ok github terryma/vim-multiple-cursors
 ok github mattn/emmet-vim
 ok github Raimondi/delimitMate
 ok github majutsushi/tagbar

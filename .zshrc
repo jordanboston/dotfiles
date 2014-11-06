@@ -6,7 +6,7 @@ source $ZSH/oh-my-zsh.sh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="jdev"
+ZSH_THEME="avit"
 
 # Set tmux in 256 color mode (make vim look better)
 alias tmux='TERM=xterm-256color tmux'
@@ -90,4 +90,8 @@ export PATH="/usr/local/bin:$PATH"
 if [ -n "$TMUX" ]; then
     eval "$(rbenv init -)"
 fi
+
+# Fix tmux autocomplete issue
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
