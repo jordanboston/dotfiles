@@ -5,26 +5,54 @@ ok brew brew-cask  # Ensure cask is installed
 
 # tools
 ok cask iterm2
+ok cask codekit
+ok cask virtualbox
 
-# fun
-ok cask minecraft
+# reading
+ok cask send-to-kindle
+
+# make kindle files
+ok cask kindlegen
+ok cask kindle-previewer
+
+# text editors
+ok cask atom
+ok cask atom-shell
+ok cask mou
+
+# screencapture
+ok cask camtasia
+
+# video conversion
+ok cask miro-video-converter
+
+# music
+ok cask amazon-music
 
 # storage
 ok cask dropbox
-ok cask onepassword
+ok cask amazon-cloud-drive
 
 # databases
 ok cask postgres
+
+# Mac MySQL Apache PHP stack
+ok cask mamp
+
+# design
+ok cask adobe-creative-cloud
 
 # ruby-stuff
 ok brew rbenv
 
 # email and communication
 ok cask mailbox
-ok cask slack
 
-# browers
+# browsers
 ok cask google-chrome
+ok cask opera
+ok cask firefox
 
 # servers
 ok cask vagrant
+ok cask virtualbox
