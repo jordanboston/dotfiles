@@ -9,16 +9,7 @@ ok brew ruby-build
 ok cask heroku-toolbelt
 
 ok directory $HOME/
-ok destination $HOME/
-ok github jordanboston/dotfiles
-
-destination $HOME
-for file in $HOME/dotfiles/*; do
-  ok symlink ".$(basename $file)" $file
-done
-
 ok directory $HOME/dotfiles/.vim
-ok directory $HOME/dotfiles/.vim/bundle
 ok directory $HOME/dotfiles/.vim/autoload
 
 destination $HOME/dotfiles/.vim/autoload
