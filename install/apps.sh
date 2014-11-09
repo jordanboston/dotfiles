@@ -4,55 +4,55 @@ ok brew # Ensure homebrew is installed
 ok brew brew-cask  # Ensure cask is installed
 
 # tools
-ok cask iterm2
-ok cask codekit
-ok cask virtualbox
+ok brew cask iterm2
+ok brew cask codekit
+ok brew cask virtualbox
 
 # reading
-ok cask send-to-kindle
+ok brew cask send-to-kindle
 
 # make kindle files
-ok cask kindlegen
-ok cask kindle-previewer
+ok brew cask kindlegen
+ok brew cask kindle-previewer
 
 # text editors
-ok cask atom
-ok cask atom-shell
-ok cask mou
+ok brew cask atom
+ok brew cask atom-shell
+ok brew cask mou
 
 # screencapture
-ok cask camtasia
+ok brew cask camtasia
 
 # video conversion
-ok cask miro-video-converter
+ok brew cask miro-video-converter
 
 # music
-ok cask amazon-music
+ok brew cask amazon-music
 
 # storage
-ok cask dropbox
-ok cask amazon-cloud-drive
+ok brew cask dropbox
+ok brew cask amazon-cloud-drive
 
 # databases
-ok cask postgres
+ok brew cask postgres
 
 # Mac MySQL Apache PHP stack
-ok cask mamp
+ok brew cask mamp
 
 # design
-ok cask adobe-creative-cloud
+ok brew cask adobe-creative-cloud
 
 # ruby-stuff
 ok brew rbenv
 
 # email and communication
-ok cask mailbox
+ok brew cask mailbox
 
 # browsers
-ok cask google-chrome
-ok cask opera
-ok cask firefox
+ok brew cask google-chrome
+ok brew cask opera
+ok brew cask firefox
 
 # servers
-ok cask vagrant
-ok cask virtualbox
+ok brew cask vagrant
+ok brew cask virtualbox

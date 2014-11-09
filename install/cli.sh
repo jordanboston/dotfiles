@@ -6,7 +6,8 @@ ok brew rbenv
 ok brew tmux
 ok brew reattach-to-user-namespace
 ok brew ruby-build
-ok cask heroku-toolbelt
+ok brew zsh
+ok brew cask heroku-toolbelt
 
 ok directory $HOME/
 ok directory $HOME/dotfiles/.vim
@@ -14,7 +15,8 @@ ok directory $HOME/dotfiles/.vim/bundle
 ok directory $HOME/dotfiles/.vim/autoload
 
 destination $HOME/dotfiles/.vim/autoload
-ok github tpope/vim-pathogen
+# update the pathogen file in autoload manually
+# from tpope/vim-pathogen
 
 destination $HOME/dotfiles/.vim/bundle
 ok github tpope/vim-surround
