@@ -7,6 +7,7 @@ ok brew brew-cask  # Ensure cask is installed
 ok cask iterm2
 ok cask codekit
 ok cask virtualbox
+ok cask flux
 
 # make kindle files
 ok cask kindlegen
