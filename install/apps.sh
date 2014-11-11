@@ -8,6 +8,7 @@ ok cask iterm2
 ok cask codekit
 ok cask virtualbox
 ok cask flux
+ok cask goodsync
 
 # make kindle files
 ok cask kindlegen
