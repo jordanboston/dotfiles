@@ -77,6 +77,7 @@ alias zshreload="source ~/.zshrc"
 alias local5="open http://localhost:5000"
 alias local3="open http://localhost:3000"
 alias lrts="open http://localhost:3000/rails/info/routes"
+alias mou="open -a mou"
 
 # Stop annoying AUTO-CORRECTION (like with rspec command)
 unsetopt correct_all
