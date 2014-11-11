@@ -14,8 +14,7 @@ alias tmux='TERM=xterm-256color tmux'
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for
-completion.
+# Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in
@@ -43,15 +42,11 @@ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/code/bork/bin:$PATH
 export EDITOR=vim
 
 # aliases
-alias zshconfig="vim ~/.zshrc"
-alias zshreload="source ~/.zshrc"
+alias zshrc="vim ~/.zshrc"
+alias srczsh="source ~/.zshrc"
 alias local5="open http://localhost:5000"
 alias local3="open http://localhost:3000"
-alias lrts="open http://localhost:3000/rails/info/routes"
-
-# Stop annoying AUTO-CORRECTION (like with rspec command)
-unsetopt correct_all
-setopt correct
+alias localrts="open http://localhost:3000/rails/info/routes"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
