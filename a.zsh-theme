@@ -1,4 +1,4 @@
-# jdev theme
+# a broken zsh theme
 
 # features:
 # displays git status (if applicable in current folder)

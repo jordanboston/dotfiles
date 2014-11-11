@@ -1,4 +1,4 @@
-#  Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -14,48 +14,29 @@ alias tmux='TERM=xterm-256color tmux'
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for
-completion.
+# Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-# Which plugins would you like to load? (plugins can be found in
-~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git git-extras ruby brew bundler osx rails web-search)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export
-PATH=/usr/local/sbin:$HOME/code/bork/bin:/Applications/Postgres.app:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
-
-# export
-PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/code/bork/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Make vim the default editor
-export EDITOR=vim
-
-# aliases
-alias zshconfig="vim ~/.zshrc"
-alias zshreload="source ~/.zshrc"
-alias local5="open http://localhost:5000"
-alias local3="open http://localhost:3000"
-alias lrts="open http://localhost:3000/rails/info/routes"
-
-# Stop annoying AUTO-CORRECTION (like with rspec command)
-unsetopt correct_all
-setopt correct
+# Ensure user-installed binaries take precedence
+export PATH=/usr/local/bin:/Applications/Postgres.app:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
+export PATH=$PATH:$HOME/bork/bin
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# For Brew and what not with git
-export PATH="/usr/local/bin:$PATH"
+# Make vim the default editor
+export EDITOR=vim
+
+# aliases
+alias zshrc="vim ~/.zshrc"
+alias srczsh="source ~/.zshrc"
+alias local5="open http://localhost:5000"
+alias local3="open http://localhost:3000"
+alias localrts="open http://localhost:3000/rails/info/routes"
