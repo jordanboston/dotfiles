@@ -7,9 +7,8 @@ ok brew brew-cask  # Ensure cask is installed
 ok cask iterm2
 ok cask codekit
 ok cask virtualbox
-
-# reading
-ok cask send-to-kindle
+ok cask flux
+ok cask goodsync
 
 # make kindle files
 ok cask kindlegen
@@ -35,9 +34,6 @@ ok cask amazon-cloud-drive
 
 # databases
 ok cask postgres
-
-# Mac MySQL Apache PHP stack
-ok cask mamp
 
 # design
 ok cask adobe-creative-cloud
