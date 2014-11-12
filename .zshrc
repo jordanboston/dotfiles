@@ -33,6 +33,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
 
+# rbenv
+eval "$(rbenv init -)"
+
 #  Use the correct load path in a TMUX session
 if [ -n "$TMUX" ]; then
     eval "$(rbenv init -)"
