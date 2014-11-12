@@ -31,6 +31,7 @@ ok github mattn/webapi-vim
 ok github mattn/emmet-vim
 ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
+ok github rizzatti/dash.vim
 
 ok brew ctags
 ok brew graphviz

@@ -9,6 +9,7 @@ ok cask codekit
 ok cask virtualbox
 ok cask flux
 ok cask goodsync
+ok cask dash
 
 # make kindle files
 ok cask kindlegen
