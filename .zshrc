@@ -26,14 +26,15 @@ export LANG=en_US.UTF-8
 # Make vim the default editor
 export EDITOR=vim
 
+source $ZSH/oh-my-zsh.sh
+
 # Ensure user-installed binaries take precedence
-export PATH=$PATH:/usr/local/bin:/Applications/Postgres.app
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin
-export PATH=$HOME/bork/bin
+export PATH=/usr/local/bin:/Applications/Postgres.app:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
+export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 #  Use the correct load path in a TMUX session
 if [ -n "$TMUX" ]; then
