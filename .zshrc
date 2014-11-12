@@ -20,19 +20,25 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git git-extras ruby brew bundler osx rails web-search)
 
-source $ZSH/oh-my-zsh.sh
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Make vim the default editor
+export EDITOR=vim
 
 # Ensure user-installed binaries take precedence
-export PATH=/usr/local/bin:/Applications/Postgres.app:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
-export PATH=$PATH:$HOME/bork/bin
+export PATH=$PATH:/usr/local/bin:/Applications/Postgres.app
+export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=$HOME/bork/bin
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Make vim the default editor
-export EDITOR=vim
+#  Use the correct load path in a TMUX session
+if [ -n "$TMUX" ]; then
+    eval "$(rbenv init -)"
+fi
 
 # aliases
 alias zshrc="vim ~/.zshrc"
