@@ -10,15 +10,15 @@ ok brew zsh
 ok cask heroku-toolbelt
 
 ok directory $HOME/
-ok directory $HOME/dotfiles/.vim
-ok directory $HOME/dotfiles/.vim/bundle
-ok directory $HOME/dotfiles/.vim/autoload
+ok directory $HOME/.vim
+ok directory $HOME/.vim/bundle
+ok directory $HOME/.vim/autoload
 
-destination $HOME/dotfiles/.vim/autoload
+destination $HOME/.vim/autoload
 # update the pathogen file in autoload manually
 # from tpope/vim-pathogen
 
-destination $HOME/dotfiles/.vim/bundle
+destination $HOME/.vim/bundle
 ok github tpope/vim-surround
 ok github tpope/vim-rails
 ok github tpope/vim-bundler

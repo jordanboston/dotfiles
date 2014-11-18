@@ -44,6 +44,7 @@ fi
 # aliases
 alias zshrc="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
+alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias local5="open http://localhost:5000"
 alias local3="open http://localhost:3000"
 alias localrts="open http://localhost:3000/rails/info/routes"
