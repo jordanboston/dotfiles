@@ -7,7 +7,6 @@ ok brew tmux
 ok brew reattach-to-user-namespace
 ok brew ruby-build
 ok brew zsh
-ok cask heroku-toolbelt
 
 ok directory $HOME/
 ok directory $HOME/.vim

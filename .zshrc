@@ -49,3 +49,4 @@ alias local5="open http://localhost:5000"
 alias local3="open http://localhost:3000"
 alias localrts="open http://localhost:3000/rails/info/routes"
 alias mou="open -a mou.app"
+unalias heroku
