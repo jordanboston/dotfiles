@@ -2,12 +2,12 @@ require 'rubygems'
 require 'irb/completion'
 
 # awesome print
-# begin
-#  require "awesome_print"
-#  AwesomePrint.irb!
-# rescue LoadError => err
-#  warn "Couldn't load awesome_print: #{err}"
-# end
+begin
+  require "awesome_print"
+  AwesomePrint.irb!
+rescue LoadError => err
+  warn "Couldn't load awesome_print: #{err}"
+end
 
 IRB.conf[:PROMPT][:SIMPLE] = {
     :PROMPT_I => ">> ",
