@@ -4,8 +4,6 @@
 set list                  " Show whitespace
 set textwidth=80
 set encoding=utf-8
-set splitright            " Make new vsplits open to the right of current buffer
-set splitbelow            " Make new horiz splits open below current buffer
 
 syntax enable " Turn on syntax highlighting
 
@@ -15,6 +13,4 @@ syntax enable " Turn on syntax highlighting
 
 " Remap the 'kj' keyboard input whilst in Insert mode to switch to Normal mode
 " This is a handy way to go back to Normal mode without reaching for the <Esc>
-" key and there aren't many english words that have 'k' and 'j' used next to
-" each other.
 inoremap kj <Esc>
