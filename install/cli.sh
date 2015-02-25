@@ -32,11 +32,11 @@ ok github mattn/emmet-vim
 ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
 ok github rizzatti/dash.vim
-# SnipMate (RubyMotion snippets)
 ok github tomtom/tlib_vim
 ok github MarcWeber/vim-addon-mw-utils
 ok github garbas/vim-snipmate
-ok github rcyrus/snipmate-snippets-rubymotion
+ok github pangloss/vim-javascript
+ok github kchmck/vim-coffee-script
 
 ok brew ctags
 ok brew graphviz
