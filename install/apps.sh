@@ -42,9 +42,6 @@ ok cask adobe-creative-cloud
 # ruby-stuff
 ok brew rbenv
 
-# email and communication
-ok cask mailbox
-
 # browsers
 ok cask google-chrome
 ok cask opera
