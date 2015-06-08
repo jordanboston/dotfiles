@@ -8,6 +8,7 @@ ok brew tmux
 ok brew reattach-to-user-namespace
 ok brew ruby-build
 ok brew zsh
+ok brew vim
 
 ok directory $HOME/
 ok directory $HOME/.vim
