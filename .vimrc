@@ -72,6 +72,7 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " let g:netrw_liststyle=3
 
 "EDITING OPTIONS
+set relativenumber
 set number      " line numbers
 set showbreak=+ " display a + at the beginning of a wrapped line
 set showmatch   " flash the matching bracket on inserting a )]} etc
@@ -167,3 +168,4 @@ nnoremap <leader>t :TagbarToggle<CR>
 "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 "Extras, for testing out possible canidates
 "=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=--=-=-=-=-=-=-=-
+
