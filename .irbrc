@@ -1,12 +1,11 @@
 require 'rubygems'
 require 'irb/completion'
 
-# awesome print
+# Pry
 begin
-  require "awesome_print"
-  AwesomePrint.irb!
+  require "pry"
 rescue LoadError => err
-  warn "Couldn't load awesome_print: #{err}"
+  warn "Couldn't bind pry on load #{err}"
 end
 
 IRB.conf[:PROMPT][:SIMPLE] = {
@@ -17,10 +16,13 @@ IRB.conf[:PROMPT][:SIMPLE] = {
 }
 
 IRB.conf[:AUTO_INDENT] = true
-IRB.conf[:PROMPT_MODE] = :SIMPLE 
+IRB.conf[:PROMPT_MODE] = :SIMPLE
+
 # Hirb in Rails
-if ENV['RAILS_ENV']
-  require 'rubygems'
-  require 'hirb'
-  Hirb.enable
-end
+# if ENV['RAILS_ENV']
+#   require 'rubygems'
+#   require 'hirb'
+#   Hirb.enable
+# end
+
+binding.pry
