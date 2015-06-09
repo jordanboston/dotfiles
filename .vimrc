@@ -72,18 +72,8 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " let g:netrw_liststyle=3
 
 "EDITING OPTIONS
-" toggle absolute and relative numbers
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-n> :call NumberToggle()<cr>
-" set number      " line numbers
-
+set relativenumber
+set number      " line numbers
 set showbreak=+ " display a + at the beginning of a wrapped line
 set showmatch   " flash the matching bracket on inserting a )]} etc
 
