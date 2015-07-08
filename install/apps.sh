@@ -10,6 +10,7 @@ ok cask virtualbox
 ok cask flux
 ok cask goodsync
 ok cask dash
+ok cask slack
 
 # make kindle files
 ok cask kindlegen
