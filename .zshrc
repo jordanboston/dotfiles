@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:$PATH
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
 
 # rbenv
