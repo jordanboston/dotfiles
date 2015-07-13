@@ -32,7 +32,6 @@ ok github mattn/webapi-vim
 ok github mattn/emmet-vim
 ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
-ok github rizzatti/dash.vim
 ok github tomtom/tlib_vim
 ok github MarcWeber/vim-addon-mw-utils
 ok github garbas/vim-snipmate
