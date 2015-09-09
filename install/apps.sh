@@ -6,11 +6,11 @@ ok brew brew-cask  # Ensure cask is installed
 # tools
 ok cask iterm2
 ok cask codekit
-ok cask virtualbox
 ok cask flux
 ok cask goodsync
 ok cask dash
 ok cask slack
+ok cask filezilla
 
 # make kindle files
 ok cask kindlegen
@@ -33,6 +33,7 @@ ok cask amazon-music
 # storage
 ok cask dropbox
 ok cask amazon-cloud-drive
+ok cask google-drive
 
 # databases
 ok cask postgres
@@ -45,6 +46,7 @@ ok brew rbenv
 
 # browsers
 ok cask google-chrome
+ok cask chrome-devtools
 ok cask opera
 ok cask firefox
 
