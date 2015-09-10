@@ -7,3 +7,5 @@
 * Add symlinks in $HOME for .vimrc, .zshrc, .tmux.conf, .irbrc
 * Using [mattly/bork](https://github.com/mattly/bork) to run the install files
   for brew casks from caskroom.io
+* May need to manually install `brew install caskroom/cask/brew-cask` before
+  running apps.sh
