@@ -26,11 +26,12 @@ export LANG=en_US.UTF-8
 # Make vim the default editor
 export EDITOR=vim
 
+source $ZSH/oh-my-zsh.sh
+
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
-export PATH=./node_modules/.bin:$PATH
 
 # rbenv
 eval "$(rbenv init -)"
@@ -47,7 +48,6 @@ alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias localnode="open http://localhost:6379"
 alias local3="open http://localhost:3000"
 alias localrts="open http://localhost:3000/rails/info/routes"
-unalias heroku
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
