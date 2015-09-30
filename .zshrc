@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras ruby brew bundler osx rails web-search)
+plugins=(git git-extras brew bundler)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -32,6 +32,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
+export PATH="$HOME/.node/bin:$PATH"
 
 # rbenv
 eval "$(rbenv init -)"
@@ -45,7 +46,7 @@ fi
 alias zshrc="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
-alias local5="open http://localhost:5000"
+alias localnode="open http://localhost:6379"
 alias local3="open http://localhost:3000"
 alias localrts="open http://localhost:3000/rails/info/routes"
 unalias heroku
