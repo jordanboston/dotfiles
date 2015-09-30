@@ -26,13 +26,11 @@ export LANG=en_US.UTF-8
 # Make vim the default editor
 export EDITOR=vim
 
-source $ZSH/oh-my-zsh.sh
-
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
-export PATH="$HOME/.node/bin:$PATH"
+export PATH=./node_modules/.bin:$PATH
 
 # rbenv
 eval "$(rbenv init -)"
@@ -53,3 +51,9 @@ unalias heroku
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# NVM stuff
+source  ~/.nvm/nvm.sh
+
+export NVM_DIR="/Users/jboston/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
