@@ -23,20 +23,13 @@ destination $HOME/.vim/bundle
 ok github tpope/vim-surround
 ok github tpope/vim-rails
 ok github tpope/vim-bundler
-ok github mattn/gist-vim
 ok github kien/ctrlp.vim
-ok github reedes/vim-pencil
 ok github scrooloose/syntastic
 ok github skammer/vim-css-color
-ok github mattn/webapi-vim
-ok github mattn/emmet-vim
 ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
 ok github tomtom/tlib_vim
-ok github MarcWeber/vim-addon-mw-utils
-ok github garbas/vim-snipmate
 ok github pangloss/vim-javascript
-ok github kchmck/vim-coffee-script
 
 ok brew ctags
 ok brew graphviz
