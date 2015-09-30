@@ -5,9 +5,6 @@ ok brew brew-cask  # Ensure cask is installed
 
 # tools
 ok cask iterm2
-ok cask codekit
-ok cask flux
-ok cask goodsync
 ok cask slack
 ok cask filezilla
 
