@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras ruby brew bundler osx rails web-search)
+plugins=(git git-extras brew bundler)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -45,10 +45,24 @@ fi
 alias zshrc="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
-alias local5="open http://localhost:5000"
+alias localnode="open http://localhost:6379"
 alias local3="open http://localhost:3000"
 alias localrts="open http://localhost:3000/rails/info/routes"
-unalias heroku
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# NVM stuff
+source  ~/.nvm/nvm.sh
+
+export NVM_DIR="/Users/jboston/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Include Drush prompt customizations.
+/Users/jboston/.drush/drush.prompt.sh
+
+# Include Drush completion.
+/Users/jboston/.drush/drush.complete.sh
+
+# Include Drush bash customizations.
+/Users/jboston/.drush/drush.bashrc

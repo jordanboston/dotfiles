@@ -31,16 +31,6 @@ let mapleader=',' " set leader to ,
 " format paragraphs (72 columns)
 nnoremap ^^ {!}par w72qrg<CR>
 
-" one-stroke window maximizing
-nnoremap <C-H> <C-W>h<C-W><BAR>
-nnoremap <C-L> <C-W>l<C-W><BAR>
-nnoremap <C-J> <C-W>j<C-W>_
-nnoremap <C-K> <C-W>k<C-W>_
-
-" quick buffer switching
-nnoremap <leader>[ :bprevious<CR>
-nnoremap <leader>] :bnext<CR>
-
 " shortcut to strip trailing whitespace
 vnoremap <leader>s :s/\s\+$//g<CR>
 
@@ -72,7 +62,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " let g:netrw_liststyle=3
 
 "EDITING OPTIONS
-set relativenumber
 set number      " line numbers
 set showbreak=+ " display a + at the beginning of a wrapped line
 set showmatch   " flash the matching bracket on inserting a )]} etc
@@ -96,8 +85,6 @@ set listchars+=precedes:«    " show a « when a line goes off the left edge of
 
 "FOLDING OPTIONS
 set foldenable       " enable folding
-set foldlevelstart=0 " start with all folds collapsed when switching buffers
-set foldcolumn=2     " adds two columns of fold status on the left-hand side of
 
 "SEARCH OPTIONS
 set ignorecase " makes search patterns case-insensitive by default
@@ -155,7 +142,6 @@ set statusline+=%M                        " + if modified, - if r/o
 set statusline+=]                         " close bracket
 set statusline+=%=                        " right-align remainder
 set statusline+=@\ L%l\ C%c\ (%P)(%L)\    " position in file and number of lines
-
 
 " Ctrlp
 nnoremap <leader>. :CtrlP<cr>
