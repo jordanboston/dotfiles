@@ -48,6 +48,7 @@ alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias localnode="open http://localhost:6379"
 alias local3="open http://localhost:3000"
 alias localrts="open http://localhost:3000/rails/info/routes"
+alias redis-server="cd redis-3.0.7 && src/redis-server"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
