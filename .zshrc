@@ -29,8 +29,8 @@ export EDITOR=vim
 source $ZSH/oh-my-zsh.sh
 
 # Ensure user-installed binaries take precedence
-export PATH=/usr/local/bin:$PATH
-export PATH=/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.5.2.0/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
 
 # rbenv
