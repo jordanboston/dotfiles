@@ -46,10 +46,11 @@ alias zshrc="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias localnode="open http://localhost:6379"
-alias local3="open http://localhost:3000"
+alias local33="cd localhost/pneuma33/"
 alias localrts="open http://localhost:3000/rails/info/routes"
 alias redis-server="cd redis-3.0.7 && src/redis-server"
-
+alias kssh="ssh kollectadm@kollective.com"
+alias koll="cd localhost/pneuma33/kollective"
 # NVM stuff
 source  ~/.nvm/nvm.sh
 
