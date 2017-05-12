@@ -32,6 +32,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.5.2.0/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
+export PATH=$HOME/.npm-packages/bin:$PATH
 
 # rbenv
 eval "$(rbenv init -)"
@@ -49,8 +50,7 @@ alias localnode="open http://localhost:6379"
 alias local33="cd localhost/pneuma33/"
 alias localrts="open http://localhost:3000/rails/info/routes"
 alias redis-server="cd redis-3.0.7 && src/redis-server"
-alias kssh="ssh kollectadm@kollective.com"
-alias koll="cd localhost/pneuma33/kollective"
+
 # NVM stuff
 source  ~/.nvm/nvm.sh
 
