@@ -32,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.5.2.0/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
-export PATH=$HOME/.npm-packages/bin:$PATH
+export NODE_PATH='/usr/local/lib/node_modules'
 
 # rbenv
 eval "$(rbenv init -)"
