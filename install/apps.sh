@@ -1,51 +1,40 @@
-# BORK stuff here
+#!/bin/bash
 
-ok brew # Ensure homebrew is installed
-ok brew brew-cask  # Ensure cask is installed
+brew cask install iterm2
+brew cask install slack
+brew cask install filezilla
+brew cask install bettertouchtool
+brew cask instal codekit
+brew cask install 1password
 
-# tools
-ok cask iterm2
-ok cask slack
-ok cask filezilla
+brew cask install kindlegen
+brew cask install kindle-previewer
 
-# make kindle files
-ok cask kindlegen
-ok cask kindle-previewer
+brew cask install sublime-text
+brew cask install atom
+brew cask install atom-shell
 
-# text editors
-ok cask atom
-ok cask atom-shell
-ok cask mou
+brew cask install camtasia
 
-# screencapture
-ok cask camtasia
+brew cask install amazon-music
 
-# video conversion
-ok cask miro-video-converter
+brew cask install dropbox
+brew cask install amazon-cloud-drive
+brew cask install google-drive
 
-# music
-ok cask amazon-music
+brew cask install postgres
+brew cask install sequel-pro
 
-# storage
-ok cask dropbox
-ok cask amazon-cloud-drive
-ok cask google-drive
+brew cask install adobe-creative-cloud
 
-# databases
-ok cask postgres
+brew install rbenv
 
-# design
-ok cask adobe-creative-cloud
+brew cask install google-chrome
+brew cask install chrome-devtools
+brew cask install opera
+brew cask install firefox
+brew cask install canary
 
-# ruby-stuff
-ok brew rbenv
-
-# browsers
-ok cask google-chrome
-ok cask chrome-devtools
-ok cask opera
-ok cask firefox
-
-# servers
-ok cask vagrant
-ok cask virtualbox
+brew cask install mamp
+brew cask install vagrant
+brew cask install virtualbox
