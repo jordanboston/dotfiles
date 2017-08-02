@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras brew bundler)
+plugins=(git git-extras bundler)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/Applications/Postgres.app/Contents/Versions/9.5.2.0/bin:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH
 export PATH=$HOME/bork/bin:/.rbenv/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 
@@ -43,15 +43,11 @@ if [ -n "$TMUX" ]; then
 fi
 
 # aliases
-alias zshrc="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
-alias localnode="open http://localhost:6379"
-alias redis-server="cd redis-3.0.7 && src/redis-server"
+alias wpcore="wget https://wordpress.org/latest.zip"
 
 # NVM stuff
-source  ~/.nvm/nvm.sh
-
-export NVM_DIR="/Users/jboston/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
