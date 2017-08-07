@@ -29,4 +29,3 @@ ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
 ok github tomtom/tlib_vim
 ok github MarcWeber/vim-addon-mw-utils
-ok github pangloss/vim-javascript
