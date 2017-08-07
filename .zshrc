@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras bundler)
+plugins=(git git-extras wp-cli)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
