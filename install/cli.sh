@@ -15,11 +15,11 @@ ok directory $HOME/.vim
 ok directory $HOME/.vim/bundle
 ok directory $HOME/.vim/autoload
 
-destination $HOME/.vim/autoload
+cd $HOME/.vim/autoload
 # update the pathogen file in autoload manually
 # from tpope/vim-pathogen
 
-destination $HOME/.vim/bundle
+cd $HOME/.vim/bundle
 ok github tpope/vim-surround
 ok github tpope/vim-bundler
 ok github kien/ctrlp.vim
@@ -29,3 +29,5 @@ ok github Raimondi/delimitMate
 ok github majutsushi/tagbar
 ok github tomtom/tlib_vim
 ok github MarcWeber/vim-addon-mw-utils
+ok github jelera/vim-javascript-syntax
+ok github mxw/vim-jsx
