@@ -45,8 +45,8 @@ fi
 # aliases
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
+alias js="cd Javascript ; ls"
 alias sb="cd ~/Scotchbox"
-alias wpcore="wget https://wordpress.org/latest.zip"
 
 # ScotchBox new site: scotchbox my-project
 scotchbox() {
