@@ -45,7 +45,13 @@ fi
 # aliases
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
+alias sb="cd ~/Scotchbox"
 alias wpcore="wget https://wordpress.org/latest.zip"
+
+# ScotchBox new site: scotchbox my-project
+scotchbox() {
+  git clone https://github.com/scotch-io/scotch-box-pro "$1"
+}
 
 # NVM stuff
 export NVM_DIR="$HOME/.nvm"

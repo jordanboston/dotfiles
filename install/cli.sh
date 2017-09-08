@@ -26,8 +26,7 @@ ok github kien/ctrlp.vim
 ok github scrooloose/syntastic
 ok github skammer/vim-css-color
 ok github Raimondi/delimitMate
-ok github majutsushi/tagbar
 ok github tomtom/tlib_vim
 ok github MarcWeber/vim-addon-mw-utils
 ok github jelera/vim-javascript-syntax
-ok github mxw/vim-jsx
+ok github posva/vim-vue
