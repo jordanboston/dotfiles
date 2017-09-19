@@ -46,7 +46,7 @@ fi
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias js="cd ~/Javascript ; ls"
-alias jsvue="cd ~/Javascript/vue ; ls"
+alias vjs="cd ~/Javascript/vue ; ls"
 alias sb="cd ~/Scotchbox"
 
 # ScotchBox new site: scotchbox my-project
