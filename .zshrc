@@ -48,6 +48,7 @@ alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias js="cd ~/Javascript ; ls"
 alias vjs="cd ~/Javascript/vue ; ls"
 alias sb="cd ~/Scotchbox"
+alias photo-contest="cd /Applications/MAMP/htdocs/photo-contest ; ls"
 
 # ScotchBox new site: scotchbox my-project
 scotchbox() {
