@@ -2,15 +2,14 @@
 
 brew cask install iterm2
 brew cask install slack
-brew cask install screenhero
 brew cask install filezilla
 brew cask install bettertouchtool
 brew cask install 1password
 brew cask install github-desktop
+brew cask install postman
 
+brew cask install visual-studio-code
 brew cask install sublime-text
-brew cask install brackets
-brew cask install webstorm
 
 brew cask install amazon-music
 brew cask install spotify
