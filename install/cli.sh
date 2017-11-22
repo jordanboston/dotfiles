@@ -3,10 +3,8 @@ ok brew # Ensure homebrew is installed
 ok brew git
 ok brew hub
 ok brew tig
-ok brew rbenv
 ok brew tmux
 ok brew reattach-to-user-namespace
-ok brew ruby-build
 ok brew zsh
 ok brew vim
 
