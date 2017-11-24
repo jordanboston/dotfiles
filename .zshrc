@@ -31,7 +31,7 @@ source $ZSH/oh-my-zsh.sh
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH
-export PATH=$HOME/bork/bin:~/spark-installer:$PATH
+export PATH=$HOME/bork/bin:/spark-installer:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 
 # rbenv
