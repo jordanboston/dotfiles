@@ -7,6 +7,7 @@ ok brew tmux
 ok brew reattach-to-user-namespace
 ok brew zsh
 ok brew vim
+ok brew yarn --without-node
 
 ok directory $HOME/
 ok directory $HOME/.vim
