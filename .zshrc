@@ -51,7 +51,7 @@ alias sb="cd ~/Scotchbox"
 alias passplus="cd ~/Documents/shootandshare/pass-pictime ; ls"
 
 # ScotchBox new site: scotchbox my-project
-scotchbox() {
+function scotchbox() {
   git clone https://github.com/scotch-io/scotch-box-pro "$1"
 }
 
