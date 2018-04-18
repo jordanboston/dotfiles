@@ -63,4 +63,14 @@ export NVM_DIR="$HOME/.nvm"
 #WP CLI
 #autoload bashcompinit
 bashcompinit
-source /Users/jordan/wp-completion.bash
+source $HOME/wp-completion.bash
+
+# Mobile Development stuff
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=/usr/local/share/android-sdk
+
+###-tns-completion-start-###
+if [ -f $HOME/.tnsrc ]; then
+    source $HOME/.tnsrc
+fi
+###-tns-completion-end-###
