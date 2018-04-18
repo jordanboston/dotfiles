@@ -64,3 +64,13 @@ export NVM_DIR="$HOME/.nvm"
 #autoload bashcompinit
 bashcompinit
 source /Users/jordan/wp-completion.bash
+
+# Mobile Development stuff
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=/usr/local/share/android-sdk
+
+###-tns-completion-start-###
+if [ -f /Users/jordan/.tnsrc ]; then
+    source /Users/jordan/.tnsrc
+fi
+###-tns-completion-end-###
