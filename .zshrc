@@ -67,7 +67,11 @@ source $HOME/wp-completion.bash
 
 # Mobile Development stuff
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=/usr/local/share/android-sdk
+# Path for Android Studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Change Javac version for Android dev (setjdk 1.8.0)
 function setjdk() {
