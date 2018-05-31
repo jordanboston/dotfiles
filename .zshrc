@@ -34,6 +34,8 @@ export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH
 export PATH=$HOME/bork/bin:$HOME/.spark-installer:$HOME/.composer/vendor/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 
+export XDEBUG_CONFIG="idekey=VSCODE"
+
 # rbenv
 eval "$(rbenv init -)"
 
