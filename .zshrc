@@ -50,7 +50,7 @@ alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
 alias js="cd ~/Javascript ; ls"
 alias vjs="cd ~/Javascript/vue ; ls"
 alias sb="cd ~/Scotchbox"
-alias passplus="cd ~/Documents/shootandshare/pass-pictime ; ls"
+alias srepos="cd ~/Documents/shootandshare/GITHUB\ REPOS ; ls"
 
 # ScotchBox new site: scotchbox my-project
 function scotchbox() {
