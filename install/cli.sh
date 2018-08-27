@@ -9,6 +9,8 @@ ok brew zsh
 ok brew vim
 ok brew php
 ok brew mysql
+ok brew aws-elasticbeanstalk
+ok brew awscli
 ok brew yarn --without-node
 
 ok directory $HOME/
@@ -24,7 +26,6 @@ cd $HOME/.vim/bundle
 ok github tpope/vim-surround
 ok github tpope/vim-bundler
 ok github kien/ctrlp.vim
-ok github scrooloose/syntastic
 ok github skammer/vim-css-color
 ok github Raimondi/delimitMate
 ok github tomtom/tlib_vim

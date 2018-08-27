@@ -46,7 +46,7 @@ fi
 
 # aliases
 alias srczsh="source ~/.zshrc"
-alias clicheck="(cd dotfiles/install ; bork satisfy cli.sh)"
+alias clicheck="(cd ~/dotfiles/install ; bork satisfy cli.sh)"
 alias js="cd ~/Javascript ; ls"
 alias vjs="cd ~/Javascript/vue ; ls"
 alias sb="cd ~/Scotchbox"
@@ -97,3 +97,10 @@ if [ -f $HOME/.tnsrc ]; then
     source $HOME/.tnsrc
 fi
 ###-tns-completion-end-###
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
