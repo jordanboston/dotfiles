@@ -2,6 +2,9 @@
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Commands prepended with a space " " will not be remembered in the history file.
+setopt histignorespace
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
