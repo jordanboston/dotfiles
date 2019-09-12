@@ -12,6 +12,7 @@ ok brew mysql
 ok brew aws-elasticbeanstalk
 ok brew awscli
 ok brew yarn --without-node
+ok brew trash
 
 ok directory $HOME/
 ok directory $HOME/.vim
