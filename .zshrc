@@ -43,6 +43,11 @@ export XDEBUG_CONFIG="idekey=VSCODE"
 # rbenv
 eval "$(rbenv init -)"
 
+# docker-sync
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
 #  Use the correct load path in a TMUX session
 if [ -n "$TMUX" ]; then
     eval "$(rbenv init -)"
@@ -54,7 +59,6 @@ alias clicheck="(cd ~/dotfiles/install ; bork satisfy cli.sh)"
 alias js="cd ~/Javascript ; ls"
 alias vjs="cd ~/Javascript/vue ; ls"
 alias sb="cd ~/Scotchbox"
-alias srepos="cd ~/Documents/shootandshare/GITHUB\ REPOS ; ls"
 
 # ScotchBox new site: scotchbox my-project
 function scotchbox() {
@@ -112,3 +116,5 @@ fi
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/jordan/.nvm/versions/node/v8.9.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/jordan/.nvm/versions/node/v8.9.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
