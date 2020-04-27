@@ -20,6 +20,7 @@ set colorcolumn=+1        " Stick with short lines.
 set encoding=utf-8
 set splitright            " Make new vsplits open to the right of current buffer
 set splitbelow            " Make new horiz splits open below current buffer
+set autoindent
 
 syntax enable " Turn on syntax highlighting
 
