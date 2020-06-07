@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH
 export PATH=$HOME/bork/bin:$HOME/.spark-installer:$HOME/.composer/vendor/bin:$PATH
-export PATH=$HOME/Library/Python/2.7/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/usr/local/go/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 
 export XDEBUG_CONFIG="idekey=VSCODE"
@@ -58,7 +58,7 @@ alias srczsh="source ~/.zshrc"
 alias clicheck="(cd ~/dotfiles/install ; bork satisfy cli.sh)"
 alias js="cd ~/Javascript ; ls"
 alias vjs="cd ~/Javascript/vue ; ls"
-alias sb="cd ~/Scotchbox"
+alias dev="cd ~/devApps"
 
 # ScotchBox new site: scotchbox my-project
 function scotchbox() {
