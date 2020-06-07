@@ -26,9 +26,6 @@ brew cask install dropbox
 brew cask install amazon-cloud-drive
 brew cask install google-drive
 
-brew cask install postgres
-brew cask install sequel-pro
-
 brew cask install adobe-creative-cloud
 brew cask install sip
 

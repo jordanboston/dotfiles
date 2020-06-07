@@ -10,6 +10,8 @@ ok brew vim
 ok brew nvm
 ok brew php
 ok brew mysql
+ok brew postgres
+ok brew java
 ok brew aws-elasticbeanstalk
 ok brew awscli
 ok brew serverless

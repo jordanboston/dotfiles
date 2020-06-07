@@ -33,15 +33,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:$PATH
-export PATH=$HOME/bork/bin:$HOME/.spark-installer:$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/bork/bin:$HOME/.composer/vendor/bin:$PATH
 export PATH=$HOME/usr/local/go/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 
 export XDEBUG_CONFIG="idekey=VSCODE"
-
-# rbenv
-eval "$(rbenv init -)"
 
 # docker-sync
 if which ruby >/dev/null && which gem >/dev/null; then
@@ -56,8 +52,6 @@ fi
 # aliases
 alias srczsh="source ~/.zshrc"
 alias clicheck="(cd ~/dotfiles/install ; bork satisfy cli.sh)"
-alias js="cd ~/Javascript ; ls"
-alias vjs="cd ~/Javascript/vue ; ls"
 alias dev="cd ~/devApps"
 
 # ScotchBox new site: scotchbox my-project
@@ -72,8 +66,8 @@ export NVM_DIR="$HOME/.nvm"
 
 #WP CLI
 #autoload bashcompinit
-bashcompinit
-source $HOME/wp-completion.bash
+# bashcompinit
+# source $HOME/wp-completion.bash
 
 # Mobile Development stuff
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -100,21 +94,5 @@ function setjdk() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
  }
 
-###-tns-completion-start-###
-if [ -f $HOME/.tnsrc ]; then
-    source $HOME/.tnsrc
-fi
-###-tns-completion-end-###
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . ~/.nvm/versions/node/v9.2.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/jordan/.nvm/versions/node/v8.9.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/jordan/.nvm/versions/node/v8.9.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
