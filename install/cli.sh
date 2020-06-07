@@ -7,10 +7,14 @@ ok brew tmux
 ok brew reattach-to-user-namespace
 ok brew zsh
 ok brew vim
+ok brew nvm
 ok brew php
 ok brew mysql
 ok brew aws-elasticbeanstalk
 ok brew awscli
+ok brew serverless
+ok brew terraform
+ok brew angular-cli
 ok brew yarn --without-node
 ok brew trash
 

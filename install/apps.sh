@@ -19,14 +19,6 @@ brew cask install karabiner-elements
 brew cask install visual-studio-code
 brew cask install jetbrains-toolbox
 
-brew cask install nvm
-brew cask install yarn
-brew cask install awscli
-brew cask install aws-elasticbeanstalk
-brew cask install serverless
-brew cask install terraform
-brew cask install angular-cli
-
 brew cask install spotify
 brew cask install twitch
 
