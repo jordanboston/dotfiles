@@ -1,4 +1,5 @@
 #!/bin/bash
+brew install homebrew/cask  
 
 brew cask install iterm2
 brew cask install slack
