@@ -45,6 +45,11 @@ function scotchbox() {
   git clone https://github.com/scotch-io/scotch-box-pro "$1"
 }
 
+# lucagrulla / cw
+cw_tail() {
+  cw tail -p $1 -f $2
+}
+
 # NVM stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
