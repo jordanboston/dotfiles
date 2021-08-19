@@ -47,7 +47,7 @@ function scotchbox() {
 
 # lucagrulla / cw
 cw_tail() {
-  cw tail -p $1 -f $2
+  cw tail --profile $1 --region us-east-1 -f $2
 }
 
 # NVM stuff
