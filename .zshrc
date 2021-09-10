@@ -33,6 +33,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/.npm-global/bin:$PATH
 export XDEBUG_CONFIG="idekey=VSCODE"
 
 # aliases
@@ -51,11 +52,13 @@ cw_tail() {
 }
 
 # NVM stuff
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
+NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_HOMEBREW" ] && \. "$NVM_HOMEBREW"
 # Mobile Development stuff
 # export JAVA_HOME=$(/usr/libexec/java_home)
 # Path for Android Studio
