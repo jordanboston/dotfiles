@@ -51,6 +51,9 @@ cw_tail() {
   cw tail --profile $1 --region us-east-1 -f $2
 }
 
+# PHPBREW
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
 # NVM stuff
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
