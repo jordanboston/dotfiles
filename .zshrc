@@ -128,11 +128,3 @@ NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
 
 # autoload -U +X bashcompinit && bashcompinit
 # complete -o nospace -C /usr/local/bin/terraform terraform
-
-#PHPENV
-export PHPENV_ROOT="/Users/jordan/.phpenv"
-if [ -d "${PHPENV_ROOT}" ]; then
-  export PATH="${PHPENV_ROOT}/bin:${PATH}"
-  eval "$(phpenv init -)"
-fi
-
