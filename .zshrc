@@ -128,3 +128,5 @@ NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
 
 # autoload -U +X bashcompinit && bashcompinit
 # complete -o nospace -C /usr/local/bin/terraform terraform
+
+export DOCKER_HOST=unix:///Users/$(whoami)/Library/Containers/com.docker.docker/Data/docker.raw.sock
